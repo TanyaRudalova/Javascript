@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // Створити змінні. Присвоїти кожному з них значення: 'hello','owu','com', 'ua', 1, 10, -999, 123, 3.14, 2.7, 16, true, false
+    // Вивести кожну змінну за допомогою: console.log , alert, document.write
+     let hi = 'hello';
+     console.log(hi);
+      alert(hi);
+    document.write(hi);
+
+     let ow = 'owu';
+     console.log (ow);
+     alert(ow);
+    document.write(ow);
+
+     let cm = 'com';
+     console.log(cm);
+     alert(cm);
+     document.write(cm);
+
+     let uk = 'ua';
+     console.log(uk);
+     alert(uk);
+     document.write(uk);
+
+    let post = 1;
+    console.log ( post );
+    alert(post);
+    document.write(post);
+
+    let number10 = 10;
+    console.log (number10 );
+    alert(number10);
+    document.write(number10);
+
+    let number9 = -999;
+    console.log (number9);
+    alert(number9);
+    document.write(number9);
+
+    let number123 = 123;
+    console.log ( number123);
+    alert(number123);
+    document.write(number123);
+
+    let number3 = 3.14;
+    console.log (number3);
+    alert(number3);
+    document.write(number3);
+
+    let number2 = 2.7;
+    console.log (number2 );
+    alert(number2);
+    document.write (number2);
+
+    let number16 = 16;
+    console.log(number16);
+    alert(number16);
+    document.write(number16);
+
+    let img = 'true';
+    console.log(img);
+    alert(img);
+    document.write(img);
+
+    let minute = 'false';
+    console.log(minute);
+    alert(minute);
+    document.write(minute);
+
+    // Переприсвоїти кожній змінній з завдання значення на довільне. Вивести кожну змінну за допомогою: console.log , alert, document.write
+    hi = 'good bye';
+    console.log(hi);
+    alert(hi);
+    document.write(hi);
+
+    ow = 'smile';
+    console.log(ow);
+    alert(ow);
+    document.write(ow);
+
+    cm = 'day';
+    console.log(cm);
+    alert(cm);
+    document.write(cm);
+
+    uk = 'forest';
+    console.log(uk);
+    alert(uk);
+    document.write(uk);
+
+    post = 56;
+    console.log(post);
+    alert(post);
+    document.write(post);
+
+    number10 = 95;
+    console.log(number10);
+    alert(number10);
+    document.write(number10);
+
+    number9 = 4567;
+    console.log(number9);
+    alert(number9);
+    document.write(number9);
+
+    number123 = 2345;
+    console.log(number123);
+    alert(number123);
+    document.write(number123);
+
+    number3 = 2.6789;
+    console.log(number3);
+    alert(number3);
+    document.write(number3);
+
+    number2 = 8.675;
+    console.log(number2);
+    alert(number2);
+    document.write(number2);
+
+    number16 = 324;
+    console.log(number16);
+    alert(number16);
+    document.write(number16);
+
+    img = 'nice';
+    console.log(img);
+    alert(img);
+    document.write(img);
+
+    minute = 'bad';
+    console.log(minute);
+    alert(minute);
+    document.write(minute);
+
+    // Створити 3 змінних firstName, middleName, lastName, наповнити їх своїм ПІБ. З'єднати їх в одну змінну person. (Не об'єкт)
+    let firstName = 'Tetiana';
+    let middleName = 'Rudalova';
+    let lastName = 'Eduardivna';
+
+    let person = [ firstName, middleName, lastName  ];
+      console.log(person);
+
+    // За допомогою 3х різних prompt() отримати 3 слова які являються вашими Імям, По-Батькові та роками.
+    //     Вивести "Вітаю *Імя* *По батькові*. Тобі *вік* років".
+    let name = prompt('Імя', 'Тетяна');
+    let lName = prompt('По батькові','Едуардівна');
+    let ages = prompt( 'Вік', 28 )
+
+    alert(`Вітаю ${name} ${lName}. Тобі ${ages} років`);
+
+
+    // За допомогою оператора typeof визначити типи наступних змінних та вивести їх в консоль.
+    //     let a = 100; let b = '100'; let c = true;
+        let a =100;
+        console.log(a);
+        console.log(typeof a);
+
+        let b = '100';
+        console.log(b);
+        console.log(typeof b);
+
+        let c= true;
+        console.log(c);
+        console.log(typeof c);
+
+
+    // Визначити відповідний оператор в виразах що б вийшов відповідний результат.
+    //     В однакових виразах не використовувати однакові оператори!!!
+    // 5 ? 6 -> true
+    // 5 ? 6 -> false
+    // 5 ? 6 -> false
+    // 5 ? 6 -> false
+    // 10 ? 10 -> true
+    // 10 ? 10 -> true
+    // 10 ? 10 -> false
+    // 10 ? 10 -> false
+    // 10 ? 10 -> false
+    // 123 ? '123' -> false
+    // 123 ? '123' -> true
+    console.log( 5<6 );
+    console.log(5>6);
+    console.log(5>=6);
+    console.log(5===6);
+    console.log(10===10);
+    console.log(10<=10);
+    console.log(10!==10);
+    console.log(10<10);
+    console.log(10>10);
+    console.log(123>123);
+    console.log(123===123);
+
+    // Подумайте Какие значения выведет в окно браузера следующий фрагмент кода?  и почему?
+    //     let str = "20";
+    // let a = 5;
+    // document.write(str + a + "<br/>");
+    // document.write(str - a + "<br/>");
+    // document.write(str * "2" + "<br/>");
+    // document.write(str / 2 + "<br/>");
+    //
+    //
+    // Результат не обчислюється тільки при додаванні змінних. Тому що значення змінної str в лапках.
+    //     Якщо забрати лапки, обчислиться результат
+
+
+
+
+
+</script>
+
+</body>
+</html>
