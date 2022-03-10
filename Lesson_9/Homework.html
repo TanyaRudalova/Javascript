@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<ul class="menu"></ul>
+<!-- - Є масив:-->
+<!--     ['Main','Products','About us','Contacts']-->
+<!-- Взяти файл template1.html та додати в нього скріпт котрий для кожного елементу масиву створює li та додає-->
+<!-- його до блоку .menu-->
+<!-- Завдання робити через цикли.-->
+let menuItems = ['Main','Products','About us','Contacts']
+let menu = document.getElementsByClassname('menu')[0]
+for ( element of array) {
+ let li = createElemet('li')
+ li.innerText = item
+ menu.appendChild(li)
+}
+
+
+<script src="main.js"></script>
+</body>
+</html>
