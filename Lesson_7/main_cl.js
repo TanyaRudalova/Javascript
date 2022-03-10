@@ -51,30 +51,31 @@ console.log(newCar)
 // -- addDriver (driver) - приймає об'єкт який "водій" з довільним набором полів, і додає його в поточний об'єкт car
  class Car2 {
     constructor(model, producer, year, maxSpeed, engine) {
-         this.model = model;
-         this.producer = producer;
-         this.year = year;
-         this.maxSpeed = maxSpeed;
-         this.engine = engine;
-         this.drive = function () {
-           console.log(`Їдемо зі швидкістю ${maxSpeed} на годину`)
-         };
-         this.info = function () {
+        this.model = model;
+        this.producer = producer;
+        this.year = year;
+        this.maxSpeed = maxSpeed;
+        this.engine = engine;
+    }
+         drive () {
+           console.log(`Їдемо зі швидкістю ${this.maxSpeed} на годину`);
+         }
+         info () {
              for (const key in this) {
                  if(typeof this[key] !== 'function') console.log(`${key}- ${this[key]}`)
              }
-         };
-         this.newMaxSpeed = function (newSpeed) {
+         }
+         newMaxSpeed  (newSpeed) {
              this.maxSpeed = this.maxSpeed + newSpeed
-         };
-         this.newYear = function (newValue) {
+         }
+         newYear(newValue) {
              this.year = newValue
-         };
-         this.driver = function (driver) {
+         }
+         driver (driver) {
              this.driver= driver
-         };
+         }
      }
-  }
+
  let newCar2 = new Car2('KIA Sportage', 'KIA', 2015, 190, 2.3)
  console.log(newCar2 )
  newCar2.drive();
