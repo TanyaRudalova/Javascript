@@ -114,5 +114,29 @@ buttonMate.addEventListener('click', function () {
     }
     })
 
+// - Сворити масив не цензцрних слів.
+//     Сворити інпут текстового типу.
+//     Потрібно перевіряти чи не містить ціле речення в собі погані слова.
+//     Кинути алерт з попередженням у випадку якщо містить.
+//     Перевірку робити при натисканні на кнопку
 
+let badWords = ['дурак', 'ідіот', 'свиня'];
+let inputBadWords = document.createElement('input');
+let buttonBadWords = document.createElement('button');
+buttonBadWords.innerText = 'Перевірити речення';
+document.body.append(inputBadWords, buttonBadWords);
 
+buttonBadWords.addEventListener('click', function (){
+    let valueBadWords = inputBadWords.value
+    for (let badWord of badWords) {
+        if (valueBadWords.toLowerCase().includes(badWord)) {
+            alert('У реченні містяться погані слова')
+            inputBadWords.value = ' '
+            return
+        }
+        else {
+            alert('Все ок')
+            inputBadWords.value = ' '
+        }
+    }
+    })
